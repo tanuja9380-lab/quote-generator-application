@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 30px 15px;
+    color: #222;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 17px;
+    opacity: 0.9;
+}
+
+.quote-card {
+    background: white;
+    border-radius: 20px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+.quote-mark {
+    font-size: 70px;
+    line-height: 50px;
+    color: #667eea;
+}
+
+#quote-text {
+    font-size: 28px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+#quote-author {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+button {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+#new-quote-btn {
+    background: #667eea;
+    color: white;
+}
+
+#favorite-btn {
+    background: #ff5c7a;
+    color: white;
+}
+
+#copy-btn {
+    background: #222;
+    color: white;
+}
+
+.favorites-section {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    font-size: 24px;
+}
+
+#favorite-count {
+    background: #667eea;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.favorite-item {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 12px;
+}
+
+.favorite-item p {
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.favorite-author {
+    font-weight: bold;
+}
+
+.favorite-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.favorite-actions button {
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+.delete-btn {
+    background: #ff4d4d;
+    color: white;
+}
+
+.copy-favorite-btn {
+    background: #333;
+    color: white;
+}
+
+.empty {
+    text-align: center;
+    color: #777;
+    padding: 25px;
+}
+
+.loading {
+    font-size: 18px;
+    padding: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .quote-card {
+        padding: 30px 20px;
+    }
+
+    #quote-text {
+        font-size: 22px;
+    }
+
+    .favorites-section {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}
